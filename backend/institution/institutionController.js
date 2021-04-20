@@ -32,7 +32,7 @@ find = async (req, res) => {
       if (String(e.phone).toLowerCase().includes(String(input).toLowerCase())) return true
       if (String(e.school_type).toLowerCase().includes(String(input).toLowerCase())) return true
       if (String(e.email).toLowerCase().includes(String(input).toLowerCase())) return true
-      if (String(e.legal_status).toLowerCase().includes(String(input).toLowerCase()))return true
+      if (String(e.legal_status).toLowerCase().includes(String(input).toLowerCase())) return true
     })
     res.json(filtered)
   } catch (e) {
