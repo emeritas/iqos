@@ -1,9 +1,22 @@
-import './App.css';
+import './App.scss';
+import './scss/bootstrap/bootstrap.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello TEAM!</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
