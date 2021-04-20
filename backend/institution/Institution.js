@@ -24,6 +24,14 @@ const InstitutionSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    county: {
+        type: String,
+        required: true
+    },
+    main_type: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
