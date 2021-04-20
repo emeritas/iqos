@@ -1,22 +1,17 @@
 import './App.scss';
 import './scss/bootstrap/bootstrap.scss';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Search from './pages/Search';
 
 function App() {
   return (
     <div className="App">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-        </div>
-      </div>
+      <Header />
+      <Home />
+      <Search />
+      <Footer />
     </div>
   );
 }
