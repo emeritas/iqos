@@ -32,12 +32,18 @@ getAll = async (req, res) => {
 find = async (req, res) => {
   const input_ins_code = req.body.ins_code
   const input_name = req.body.name
+  const school_type = req.body.school_type
+  const county = req.body.county
+  const main_type = req.body.main_type
 
   try {
     const found = await Institution.find({})
     const filtered = found.filter((e) => {
       if (input_ins_code && String(e.ins_code).toLowerCase().includes(String(input_ins_code).toLowerCase())) return true
       if (input_name && String(e.name).toLowerCase().includes(String(input_name).toLowerCase())) return true
+      if (school_type && school_type === e.school_type) return true
+      if (county && county === e.county) return true
+      if (main_type && main_type === e.main_type) return true
     })
     res.json(filtered)
   } catch (e) {
@@ -65,7 +71,6 @@ getFilters = async (req, res) => {
     const institutions = await Institution.find({})
     institutions.forEach(e => {
       const { school_type, county, main_type} = e
-      console.log(e)
       if (!filtered.school_type.includes(school_type) && school_type) {
         filtered.school_type = [...filtered.school_type, school_type]
       }
