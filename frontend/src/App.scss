@@ -1,61 +1,80 @@
-$background-light-blue:#BCD9EA;
-$background-blue:#0079BF;
-$light-grey: #F8F9F9;
-$text-color:#4d4d4d;
-$background-yellow: #FDFAE5;
+$background-light-blue: #bcd9ea;
+$background-blue: #0079bf;
+$light-grey: #f8f9f9;
+$text-color: #4d4d4d;
+$background-yellow: #fdfae5;
 
-section{
-  padding:40px 0;
+section {
+  padding: 40px 0;
 }
 
-a.button, input[type="submit"], button {
-  background: #E2E4E6 100%;
+a.button,
+input[type='submit'],
+button {
+  background: #e2e4e6 100%;
   border: 0;
-  border-radius: .3em;
+  border-radius: 0.3em;
   box-shadow: 0 1px 0 #a5acb0;
-  color: hsl(0,0%,30%);
+  color: hsl(0, 0%, 30%);
   cursor: pointer;
   display: inline-block;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: bold;
   line-height: 1.2;
-  margin: .3em 1em 1em 0;
+  margin: 0.3em 1em 1em 0;
   outline: 0;
-  padding: .7em 3em;
+  padding: 0.7em 3em;
   position: relative;
   text-decoration: none;
 }
 
 .button--primary {
-  background: -webkit-gradient(linear, left top, left bottom, from(#61BD4F), to(#5AAC44));
-  background: linear-gradient(to bottom, #61BD4F 0%, #5AAC44 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#61bd4f),
+    to(#5aac44)
+  );
+  background: linear-gradient(to bottom, #61bd4f 0%, #5aac44 100%);
   box-shadow: 0 2px 0 #3f6f21;
   color: #fff;
   font-weight: bold;
 }
 
-.button:hover{
-  color: hsl(0,0%,30%);
-  background-color: #D6DADC;
+.button:hover {
+  color: hsl(0, 0%, 30%);
+  background-color: #d6dadc;
   box-shadow: 0 2px 0 #c4c9cc;
 }
 
-.button--primary:focus, .button--primary:hover {
+.button--primary:focus,
+.button--primary:hover {
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5AAC44), to(#519839));
-  background: linear-gradient(to bottom, #5AAC44 0%, #519839 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#5aac44),
+    to(#519839)
+  );
+  background: linear-gradient(to bottom, #5aac44 0%, #519839 100%);
   box-shadow: 0 2px 0 #3f6f21;
 }
 
-.bg-light-grey{
+.bg-light-grey {
   background-color: $light-grey;
 }
 
-.bg-blue{
-  background-color:$background-blue;
+.bg-blue {
+  background-color: $background-blue;
 }
 
-.bg-yellow{
-  background-color:$background-yellow;
+.bg-yellow {
+  background-color: $background-yellow;
 }
 
+.article-description {
+  font-size: 16px;
+  font-weight: 600;
+}
