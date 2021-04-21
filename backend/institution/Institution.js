@@ -41,6 +41,10 @@ const InstitutionSchema = mongoose.Schema({
     legal_status: {
         type: String,
         required: true
+    },
+    confirmed: {
+        type: Boolean,
+        default: false
     }
 })
 
