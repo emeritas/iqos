@@ -4,21 +4,24 @@ const mongoose = require('mongoose')
 const routes = require('./routes/routes')
 const cors = require('cors')
 require('dotenv').config()
+const transportingData = require('../backend/institution/institutionController').transport
 
-mongoose.connection.on('error', function(err) {
+mongoose.connection.on('error', function (err) {
   console.log(err)
 })
 
-mongoose.connect(`mongodb+srv://admin:${process.env.PASSWORD}@cluster0.p9z1t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true
-}, () => console.log('on'))
+mongoose.connect(`mongodb+srv://admin:${process.env.PASSWORD}@cluster0.p9z1t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true,
+  }, () => console.log('on'))
 
 const corsOptions = {
-  exposedHeaders: ['token']
+  exposedHeaders: ['token'],
 }
+// transportingData()
 
 app.use(cors(corsOptions))
 
