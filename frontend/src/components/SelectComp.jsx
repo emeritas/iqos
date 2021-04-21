@@ -12,7 +12,7 @@ export default function SelectComp({data, action, type}) {
   return (
     <select className="form-select" onChange={(e) => handleChange(e)}>
       <option disabled selected hidden>{data.defaultOption}</option>
-      {data.options.map(e => (
+      {!data.options ? '' : data.options.map(e => (
         <option value={e}>{e}</option>
       ))}
     </select>

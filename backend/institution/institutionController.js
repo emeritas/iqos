@@ -65,7 +65,7 @@ getFilters = async (req, res) => {
     const institutions = await Institution.find({})
     institutions.forEach(e => {
       const { school_type, county, main_type} = e
-      console.log(e)
+      // console.log(e)
       if (!filtered.school_type.includes(school_type) && school_type) {
         filtered.school_type = [...filtered.school_type, school_type]
       }

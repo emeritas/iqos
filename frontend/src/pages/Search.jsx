@@ -11,6 +11,7 @@ export default function Search() {
     main_type: ''
   })
   const [data, setData] = useState('')
+  const [filters, setFilters] = useState('')
 
   const submitHandle = (e) => {
     e.preventDefault()
@@ -18,10 +19,16 @@ export default function Search() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:5000/getall')
+    // fetch('http://localhost:5000/getall')
+    // .then(res => res.json())
+    // .then(data => {
+    //   setData(data.slice(0, 20))
+    // })
+    fetch('http://localhost:5000/getfilters')
     .then(res => res.json())
     .then(data => {
-      setData(data.slice(0, 20))
+      console.log(data);
+      setFilters(data)
     })
   }, [])
 
@@ -43,19 +50,19 @@ export default function Search() {
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Savivaldybė',
-                  options: ['gargzdai', 'kaunas']
+                  options: filters.county
                   }} action={setForm} type='county'/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Grupė',
-                  options: ['gargzdai', 'kaunas']
+                  options: filters.school_type
                   }} action={setForm} type='school_type'/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Pagrindinis tipas',
-                  options: ['gargzdai', 'kaunas']
+                  options: filters.main_type
                   }} action={setForm} type='main_type'/>
                 </div>
                 <div className="col-12">
