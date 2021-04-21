@@ -1,15 +1,15 @@
 {
     "institution": [
         {
-            "ins_code": "111965327",
-            "name": "Alytaus kolegija",
-            "address": "Alytus, Studentų g. 17",
-            "phone": "+370 315 79132",
-            "school_type": "Aukštoji mokykla",
-            "county": "Alytaus m. sav.",
-            "main_type": "Kolegija",
-            "email": "rastal@akolegija.lt",
-            "legal_status": "Viešoji įstaiga"
+            "ins_code": "111965327", // input
+            "name": "Alytaus kolegija", // input
+            "address": "Alytus, Studentų g. 17", // nereikia
+            "phone": "+370 315 79132", // nereikia
+            "school_type": "Aukštoji mokykla", // select
+            "county": "Alytaus m. sav.", // select
+            "main_type": "Kolegija", // select
+            "email": "rastal@akolegija.lt", // nereikia
+            "legal_status": "Viešoji įstaiga" // nereikia
         },
         {
             "ins_code": "111950396",
