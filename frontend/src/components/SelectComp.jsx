@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function SelectComp(props) {
+export default function SelectComp({data}) {
+  // console.log(props);
   return (
-    <div>
-      
-    </div>
-  )
+    <select className="form-select">
+      <option disabled selected hidden>{data.defaultOption}</option>
+      {data.options.map(e => (
+        <option value={e}>{e}</option>
+      ))}
+    </select>
+  );
 }
