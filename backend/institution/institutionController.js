@@ -11,6 +11,15 @@ createInstitution = async (req, res) => {
   }
 }
 
+confirmInstitution = async (req, res) => {
+  try {
+    const inst = await Institution.findOneAndUpdate({_id: req.body._id}, {confirmed: true}, {new: true})
+    res.json(inst)
+  } catch (e) {
+    res.status(400).json(e)
+  }
+}
+
 getAll = async (req, res) => {
   try {
     const institutions = await Institution.find({})
@@ -39,7 +48,8 @@ find = async (req, res) => {
 function transport() {
   const institutions = require('../institutions.json')
   institutions.institution.forEach((ins) => {
-    const inst = new Institution(ins)
+    const modified = {...ins, confirmed: true}
+    const inst = new Institution(modified)
     inst.save()
   })
 }
@@ -79,5 +89,6 @@ module.exports = {
   getAll,
   find,
   transport,
-  getFilters
+  getFilters,
+  confirmInstitution
 }
