@@ -1,10 +1,12 @@
 import React from 'react';
 import '../scss/header.scss';
+import Login from './Login';
+
 
 export default function Header() {
   return (
-  
-    <header className="p-3 bg-blue text-white">
+    <>
+    <header className="p-2 bg-blue text-white fixed-top">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <a href="/" className="d-flex main-logo align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -26,20 +28,21 @@ export default function Header() {
                   Dropdown
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item text-white" href="#">Action</a></li>
-                  <li><a className="dropdown-item text-white" href="#">Another action</a></li>
+                  <li><a className="dropdown-item" href="#">Action</a></li>
+                  <li><a className="dropdown-item" href="#">Another action</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item text-white" href="#">Something else here</a></li>
+                  <li><a className="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
             </ul>
             <div className="text-end">
-              <button type="button" className="btn btn-outline-light me-2">Login</button>
+              <button type="button" className="button button--primary me-2" data-bs-toggle="modal" data-bs-target="#modalFullscreen">Prisijungti</button>
             </div>
           </div>
         </div>
       </nav>
     </header>
-
+    <Login />
+    </>
   )
 }

@@ -5,7 +5,6 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="px-4 py-5 my-5 text-center">
-          <img className="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
           <h1 className="display-5 fw-bold">Hello from homepage</h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -16,7 +15,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="blue-bg">
+
+      <section className="bg-yellow">
         <div className="container">
           <div className="row">
             <div className="col-sm">
@@ -28,6 +28,15 @@ export default function Home() {
             <div className="col-sm">
               One of three columns
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-light-blue">
+        <div className="container">
+          <div className="layout-centered-content text-center"> 
+            <h2>Using a Shared Computer?</h2> 
+            <p> We've saved some of your preferences for the next time you log in, but if you'd like you can clear those now. </p> 
           </div>
         </div>
       </section>
