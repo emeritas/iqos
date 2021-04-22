@@ -8,6 +8,7 @@ import Search from './pages/Search';
 import About from './pages/About';
 import Informal from './pages/Informal';
 import News from './pages/News';
+import ApiDocs from './pages/ApiDocs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Informal />
       <News />
       <Footer />
+      <ApiDocs />
     </div>
   );
 }
