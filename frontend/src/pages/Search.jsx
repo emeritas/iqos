@@ -15,19 +15,23 @@ export default function Search() {
 
   const submitHandle = (e) => {
     e.preventDefault()
-    console.log(form);
+    fetch('http://localhost:5000/find', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify(form)
+    })
+    .then(res => res.json())
+    .then(data => {
+      setData(data.slice(0, 20))
+    })
   }
 
   useEffect(() => {
-    // fetch('http://localhost:5000/getall')
-    // .then(res => res.json())
-    // .then(data => {
-    //   setData(data.slice(0, 20))
-    // })
     fetch('http://localhost:5000/getfilters')
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       setFilters(data)
     })
   }, [])
@@ -93,7 +97,7 @@ export default function Search() {
                 </thead>
                 <tbody>
                     {data ? data.map(e => (
-                      <tr>
+                      <tr key={e.ins_code}>
                       <td>{e.ins_code}</td>
                       <td>{e.name}</td>
                       <td>{e.address}</td>

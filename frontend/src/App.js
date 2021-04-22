@@ -8,6 +8,9 @@ import About from './pages/About';
 import Informal from './pages/Informal';
 import News from './pages/News';
 import Institution from './pages/Institution';
+import Partners from './pages/Partners';
+import NewPartner from './pages/NewPartner';
+import ApiDocs from './pages/ApiDocs';
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
       </Header>
       <Home />
       <Institution />
+      <NewPartner />
       <Footer />
+      <ApiDocs />
     </div>
   );
 }
