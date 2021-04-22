@@ -10,6 +10,7 @@ import Informal from './pages/Informal';
 import News from './pages/News';
 import Partners from './pages/Partners';
 import NewPartner from './pages/NewPartner';
+import ApiDocs from './pages/ApiDocs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </Header>
       <NewPartner />
       <Footer />
+      <ApiDocs />
     </div>
   );
 }
