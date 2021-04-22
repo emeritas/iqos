@@ -10,6 +10,8 @@ export default function NewPartner() {
     school_type: '',
     main_type: '',
     email: '',
+    phone: '',
+    address: '',
     legal_status: ''
   })
   
@@ -33,6 +35,8 @@ export default function NewPartner() {
           school_type: '',
           main_type: '',
           email: '',
+          phone: '',
+          address: '',
           legal_status: ''
         })
         alert('all good')
@@ -40,7 +44,6 @@ export default function NewPartner() {
         alert('all bad')
       }
     })
-    
   }
 
   useEffect(() => {
@@ -67,6 +70,12 @@ export default function NewPartner() {
                 </div>
                 <div className="col-12 col-sm-6">
                   <input className='form-control' type="number" placeholder='Valstybinis kodas' onChange={(e) => setForm({...form, ins_code: e.target.value})}/>
+                </div>
+                <div className="col-12 col-sm-6">
+                  <input className='form-control' type="text" placeholder='Įmonės adresas' onChange={(e) => setForm({...form, address: e.target.value})}/>
+                </div>
+                <div className="col-12 col-sm-6">
+                  <input className='form-control' type="phone" placeholder='Telefono numeris' onChange={(e) => setForm({...form, phone: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <input className='form-control' type="text" placeholder='Elektroninis paštas' onChange={(e) => setForm({...form, email: e.target.value})}/>
