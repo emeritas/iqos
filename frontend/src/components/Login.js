@@ -4,12 +4,12 @@ import '../scss/login.scss';
 function Login() {
     return (
      
-            <div class="modal fade" id="modalFullscreen" tabindex="-1" aria-labelledby="LoginModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLiveLabel">Prašome prisijungti</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal fade" id="modalFullscreen" tabIndex="-1" aria-labelledby="LoginModal" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h4 className="modal-title" id="exampleModalLiveLabel">Prašome prisijungti</h4>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="form-signin">
                         <form>

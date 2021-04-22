@@ -73,11 +73,11 @@ export default function Search() {
           </div>
         </div>
       </section>
-      <section className="blue-bg">
+      <section className="bg-light-blue">
         <div className="container">
           <div className="row">
             <div className="col-12 table-responsive">
-              <table class="table table-striped table-hover">
+              <table className="table table-striped table-hover">
                 <thead>
                   <tr>
                     <th scope="col">Juridinio asmens kodas</th>
