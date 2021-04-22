@@ -27,7 +27,6 @@ export default function Search() {
     fetch('http://localhost:5000/getfilters')
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       setFilters(data)
     })
   }, [])
@@ -93,7 +92,7 @@ export default function Search() {
                 </thead>
                 <tbody>
                     {data ? data.map(e => (
-                      <tr>
+                      <tr key={e.ins_code}>
                       <td>{e.ins_code}</td>
                       <td>{e.name}</td>
                       <td>{e.address}</td>
