@@ -27,6 +27,9 @@ function Institution() {
 							</tr>
 						</tbody>
 					</table>
+                    <div className="text-section">
+                        <p>Aukštoji mokykla, kurios pagrindinė veikla yra universitetinių studijų, su studijomis susijusios veiklos, mokslinių tyrimų vykdymas ir eksperimentinė (socialinė, kultūrinė) plėtra</p>
+                    </div>
 				</div>
 			</section>
 		</main>

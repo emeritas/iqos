@@ -1,5 +1,4 @@
 import React from 'react';
-import '../scss/header.scss';
 import Login from './Login';
 import { Link } from 'react-router-dom';
 
