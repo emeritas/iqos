@@ -12,11 +12,7 @@ import News from './pages/News';
 function App() {
   return (
     <div className='App'>
-      <Header>
-        <Router>
-          <Switch>{/* Links to other sub pages */}</Switch>
-        </Router>
-      </Header>
+      <Header />
       <Home />
       <About />
       <Search />

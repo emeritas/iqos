@@ -11,6 +11,15 @@ createInstitution = async (req, res) => {
   }
 }
 
+confirmInstitution = async (req, res) => {
+  try {
+    const inst = await Institution.findOneAndUpdate({_id: req.body._id}, {confirmed: true}, {new: true})
+    res.json(inst)
+  } catch (e) {
+    res.status(400).json(e)
+  }
+}
+
 getAll = async (req, res) => {
   try {
     const institutions = await Institution.find({})
@@ -27,8 +36,8 @@ find = async (req, res) => {
   try {
     const found = await Institution.find({})
     const filtered = found.filter((e) => {
-      if (String(e.ins_code).toLowerCase().includes(String(input_ins_code).toLowerCase())) return true
-      if (String(e.name).toLowerCase().includes(String(input_name).toLowerCase())) return true
+      if (input_ins_code && String(e.ins_code).toLowerCase().includes(String(input_ins_code).toLowerCase())) return true
+      if (input_name && String(e.name).toLowerCase().includes(String(input_name).toLowerCase())) return true
     })
     res.json(filtered)
   } catch (e) {
@@ -39,7 +48,8 @@ find = async (req, res) => {
 function transport() {
   const institutions = require('../institutions.json')
   institutions.institution.forEach((ins) => {
-    const inst = new Institution(ins)
+    const modified = {...ins, confirmed: true}
+    const inst = new Institution(modified)
     inst.save()
   })
 }
@@ -55,7 +65,7 @@ getFilters = async (req, res) => {
     const institutions = await Institution.find({})
     institutions.forEach(e => {
       const { school_type, county, main_type} = e
-      console.log(e)
+      // console.log(e)
       if (!filtered.school_type.includes(school_type) && school_type) {
         filtered.school_type = [...filtered.school_type, school_type]
       }
@@ -79,5 +89,6 @@ module.exports = {
   getAll,
   find,
   transport,
-  getFilters
+  getFilters,
+  confirmInstitution
 }
