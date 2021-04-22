@@ -9,6 +9,7 @@ import About from './pages/About';
 import Informal from './pages/Informal';
 import News from './pages/News';
 import Partners from './pages/Partners';
+import NewPartner from './pages/NewPartner';
 
 function App() {
   return (
@@ -18,12 +19,7 @@ function App() {
           <Switch>{/* Links to other sub pages */}</Switch>
         </Router>
       </Header>
-      <Home />
-      <About />
-      <Search />
-      <Informal />
-      <Partners />
-      <News />
+      <NewPartner />
       <Footer />
     </div>
   );
