@@ -5,11 +5,7 @@ export default function About() {
     <main>
       <section className="bg-light-grey">
         <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <h1 className="main-title text-center">About us</h1>
-            </div>
-          </div>
+            <h1 className="main-title text-center">About us</h1>
         </div>
       </section>
 
