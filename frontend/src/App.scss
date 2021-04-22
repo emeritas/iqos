@@ -98,4 +98,98 @@ button {
 .article-description {
   font-size: 16px;
   font-weight: 600;
+  margin: 5px 0;
+}
+
+// Fade-in animation
+.fade-animation {
+  margin-top: 25px;
+  text-align: justify;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.justify {
+  text-align: justify;
+}
+.career-title {
+  font-weight: 600;
+}
+
+.career-wrapper {
+  display: flex;
+}
+.career-opp {
+  font-size: 600;
+}
+.career-img {
+  margin: 0 10px;
+}
+
+.about-page {
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.about-container {
+  position: relative;
+  text-align: center;
+  
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img {
+  height: 100vh;
+  max-width: 100%;
+  filter: blur(5px);
+  margin: auto;
+}
+.about-title {
+  font-size: 58px;
+  font-weight: 800;
+  text-align: center;
+}
+.iqos-name {
+  font-size: 24px;
 }

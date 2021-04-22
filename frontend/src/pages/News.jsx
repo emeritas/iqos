@@ -1,10 +1,11 @@
 import React from 'react';
 import VirtualLearning from '../assets/images/virtual-learning.jpg';
 import LearningHeads from '../assets/images/learning-heads.png';
+import LithuanianLang from '../assets/images/lithuanian-lang.jpg';
 
 export default function News() {
   return (
-    <main>
+    <main className='fade-animation'>
       <section className='bg-light-grey'>
         <div className='container'>
           <div className='row'>
@@ -18,18 +19,15 @@ export default function News() {
       <section>
         <div className='container'>
           <div className='clearfix'>
-            <h2>Virtualus mokymas keičia įprastą stilių?</h2>
+            <h2 className='text-center'>
+              Virtualus mokymas keičia įprastą stilių?
+            </h2>
             <div>
               <img
                 className='col-md-6 float-md-end mb-3 ms-md-3 img-fluid'
                 src={VirtualLearning}
                 alt='Virtualus mokymasis'
               />
-              <p className='text-muted'>
-                Nuotrauka: Girts Ragelis/Shutterstock.com
-                <br />
-                Šaltinis: klaipeda.diena.lt 2021-04-15
-              </p>
             </div>
 
             <p>
@@ -71,8 +69,8 @@ export default function News() {
             </p>
           </div>
 
-          <div clearName='clearfix'>
-            <h2>
+          <div className='clearfix'>
+            <h2 className='text-center'>
               Švietimas jauno žmogaus akimis: bekontekstis faktų mokymasis
               mintinai neteko prasmės
             </h2>
@@ -81,12 +79,6 @@ export default function News() {
                 className='col-md-6 float-md-end mb-3 ms-md-3 img-fluid'
                 src={LearningHeads}
               />
-              <p className='text-muted'>
-                Ellagrin/Shutterstock.com
-                <br />
-                Autorė: Radvilė Jakštonytė 2021-03-23 12:34, atnaujinta
-                2021-03-23 12:34
-              </p>
             </div>
             <p>
               Bet tenka vis dar išgirsti vieną iš dviejų populiariausių, tarsi
@@ -140,6 +132,63 @@ export default function News() {
               Man išgirdus tokius mokinių išgyvenimus norisi, kad visi pagaliau
               išgirstų ir suprastų: atradimai ir progresas yra pasiekiamas tik
               nesėkmių ir bandymų keliu.
+            </p>
+          </div>
+
+          <div className='clearfix'>
+            <h2 className='text-center'>
+              Lituanistinis švietimas ar Inovacijų taryba – pasaulio lietuviai
+              tampa valdžios patarėjais
+            </h2>
+            <div>
+              <img
+                className='col-md-6 float-md-end mb-3 ms-md-3 img-fluid'
+                src={LithuanianLang}
+                alt='Lietuvių kalba'
+              />
+            </div>
+
+            <p>
+              Švietimo, mokslo ir sporto ministrės Jurgitos Šiugždinienės
+              darbotvarkė dabar itin įtempta. Laikydamiesi griežtų pandemijos
+              ribojimų į mokyklas grįžo dalis pradinukų. Konsultacijoms gyvai
+              jau leidžiama susitikti ir abiturientams. Ir nors pandemija jaukia
+              ateities planus, ministrės visuomenine konsultante neseniai
+              paskirta Pasaulio lietuvių bendruomenės švietimo komisijos
+              pirmininkė Alvija Černiauskaitė.
+            </p>
+
+            <p>
+              Ministrė tai vadina pirmu, bet labai svarbiu žingsniu ne tik
+              gerinant lituanistinio švietimo padėtį, bet ir įtraukiant aktyvius
+              pasaulio lietuvius į šalies gyvenimą.Lietuvoje Alviją paskutinį
+              kartą sutikome dar prieš Kalėdas, kai Jungtinės karalystės
+              lietuvių iniciatyva net keturių regionų senjorų švenčių stalas
+              tapo pilnesnis. Tada jau tradicija tapusios akcijos „iš širdies į
+              širdį“ metu surinkta daugiau nei 7 tūkstančiai eurų. O paaukoti
+              jie daugiau nei 200jų šimtų senjorų vaišėms. Tačiau tokios
+              šventinės iniciatyvos tik dalis Alvijos darbų pasaulio lietuvių
+              bendruomenėje.
+            </p>
+
+            <p>
+              Šių metų pradžioje už aktyvų lietuvybės puoselėjimą ir glaudų
+              bendradarbiavimą su gimtuoju Alytaus kraštu ji įvertinta globalios
+              Lietuvos apdovanojimu. O kasdien Alvija ne tik trijų vaikų mama,
+              bet ir lietuviško darželio bei lituanistinės mokyklos Londone
+              vadovė. Neradusi sūnui tokio darželio, kokio norėtų, Alvija jį
+              įkūrė pati.Šiuo metu ministerija ruošia projektus, todėl žmonių,
+              kurie išmano lituanistinio švietimo kasdienines problemas, parama
+              ir patarimai itin svarbūs.Iš dalies pasaulio lietuviu save vadina
+              ir Danielius.
+            </p>
+            <p>
+              Nors dabar jo darbo vieta Vilniuje, už lietuviškų idėjų proveržį
+              pasaulyje globalios Lietuvos apdovanojimuose nominuotas vyras,
+              išmaišė pusę pasaulio. Tiek Lietuvos, tiek visos Europos inovacijų
+              sistemos augimas – ir Danieliaus nuopelnas. Visos komandos žinias
+              įvertino ir Europos komisija, kuri šiai patikėjo ne vieną
+              projektą.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../scss/header.scss';
 import { Link } from 'react-router-dom';
 
@@ -35,57 +35,55 @@ export default function Header() {
           </button>
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0 text-white'>
-              <li className='nav-item'>
-                <a
-                  className='nav-link text-white active'
-                  aria-current='page'
-                  href='#'
-                >
-                  Home
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link text-white' href='#'>
-                  Link
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link text-white' href='#'>
-                  {/* <Link to='/informal'>Neformalus švietimas</Link>{' '} */}
-                </a>
-              </li>
-              <li className='nav-item dropdown'>
-                <a
-                  className='nav-link dropdown-toggle text-white'
-                  href='#'
-                  id='navbarDropdown'
-                  role='button'
-                  data-bs-toggle='dropdown'
-                  aria-expanded='false'
-                >
-                  Dropdown
-                </a>
-                <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
-                  <li>
-                    <a className='dropdown-item text-white' href='#'>
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className='dropdown-item text-white' href='#'>
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className='dropdown-divider' />
-                  </li>
-                  <li>
-                    <a className='dropdown-item text-white' href='#'>
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
+              <Fragment>
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/'>
+                    Pagrindinis
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/about'>
+                    Apie
+                  </Link>
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/informal'>
+                    Neformalus švietimas
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/new-partner'>
+                    Naujas partneris
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/news'>
+                    Naujienos
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/partners'>
+                    Partneriai
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item'>
+                  <Link className='nav-link text-white' to='/search'>
+                    Paieška
+                  </Link>{' '}
+                </li>
+
+                <li className='nav-item '>
+                  <Link className='nav-link text-white' to='/career'>
+                    Karjera
+                  </Link>{' '}
+                </li>
+              </Fragment>
             </ul>
             <div className='text-end'>
               <button type='button' className='btn btn-outline-light me-2'>
