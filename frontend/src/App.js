@@ -8,6 +8,7 @@ import Search from './pages/Search';
 import About from './pages/About';
 import Informal from './pages/Informal';
 import News from './pages/News';
+import Partners from './pages/Partners';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Search />
       <Informal />
+      <Partners />
       <News />
       <Footer />
     </div>
