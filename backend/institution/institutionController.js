@@ -30,22 +30,22 @@ getAll = async (req, res) => {
 }
 
 find = async (req, res) => {
-  const input_ins_code = req.body.ins_code
-  const input_name = req.body.name
+  const ins_code = req.body.ins_code
+  const name = req.body.name ? new RegExp(req.body.name, 'i') : null
   const school_type = req.body.school_type
   const county = req.body.county
   const main_type = req.body.main_type
 
+  const find = {}
+  if (ins_code) find.ins_code = ins_code
+  if (name) find.name = { "$regex": name }
+  if (school_type) find.school_type = school_type
+  if (county) find.county = county
+  if (main_type) find.main_type = main_type
+
   try {
-    const found = await Institution.find({})
-    const filtered = found.filter((e) => {
-      if (input_ins_code && String(e.ins_code).toLowerCase().includes(String(input_ins_code).toLowerCase())) return true
-      if (input_name && String(e.name).toLowerCase().includes(String(input_name).toLowerCase())) return true
-      if (school_type && school_type === e.school_type) return true
-      if (county && county === e.county) return true
-      if (main_type && main_type === e.main_type) return true
-    })
-    res.json(filtered)
+    const found = await Institution.find(find)
+    res.json(found)
   } catch (e) {
     res.status(400).json(e)
   }
