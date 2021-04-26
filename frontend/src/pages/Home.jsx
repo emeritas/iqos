@@ -1,13 +1,15 @@
 import React from 'react';
 
 export default function Home() {
+
   return (
     <main className='fade-animation'>
       <section className='hero'>
-        <div className='px-4 py-5 my-5 text-center'>
-          <h1 className='display-5 fw-bold'>Hello from homepage</h1>
+        <div className="bg-overlay"></div>
+        <div className='px-4 py-5 my-5 text-center hero__content'>
+          <h1 className='display-5 fw-bold text-white'>Hello from homepage</h1>
           <div className='col-lg-6 mx-auto'>
-            <p className='lead mb-4'>
+            <p className='lead mb-4 text-white'>
               Quickly design and customize responsive mobile-first sites with
               Bootstrap, the world’s most popular front-end open source toolkit,
               featuring Sass variables and mixins, responsive grid system,
