@@ -1,7 +1,7 @@
 import './App.scss';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { Fragment } from 'react';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Search from './pages/Search';
@@ -10,6 +10,7 @@ import Career from './pages/Career';
 import Informal from './pages/Informal';
 import NewPartner from './pages/NewPartner';
 import News from './pages/News';
+import Partners from './pages/Partners';
 import ApiDocs from './pages/ApiDocs';
 
 function App() {
@@ -27,15 +28,12 @@ function App() {
             <Route exact path='/partners' component={Partners} />
             <Route exact path='/search' component={Search} />
             <Route exact path='/career' component={Career} />
+            <Route exact path='/apidocs' component={ApiDocs} />
           </Switch>
         </Fragment>
       </Router>
-      {/* <Home /> */}
-      {/* <About />
-      <Informal/>
-      <Search /> */}
+
       <Footer />
-      <ApiDocs />
     </div>
   );
 }
