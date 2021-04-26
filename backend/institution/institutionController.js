@@ -30,14 +30,14 @@ getAll = async (req, res) => {
 }
 
 find = async (req, res) => {
-  const ins_code = req.body.ins_code
+  const ins_code = req.body.ins_code?  new RegExp(req.body.ins_code, 'i') : null
   const name = req.body.name ? new RegExp(req.body.name, 'i') : null
   const school_type = req.body.school_type
   const county = req.body.county
   const main_type = req.body.main_type
 
   const find = {}
-  if (ins_code) find.ins_code = ins_code
+  if (ins_code) find.ins_code = { "$regex": ins_code }
   if (name) find.name = { "$regex": name }
   if (school_type) find.school_type = school_type
   if (county) find.county = county
@@ -93,11 +93,33 @@ getFilters = async (req, res) => {
   
 }
 
+getUnconfirmedInstitutions = async (req, res) => {
+  try {
+    const found = await Institution.find({confirmed: false})
+    if (!found) throw 'no unconfirmed institutions'
+    res.json(found)
+  } catch (e) {
+    res.status(400).json(e)
+  }
+}
+
+deleteInstitution = async (req, res) => {
+  try {
+    const deleted = await Institution.findByIdAndRemove({_id: req.body._id})
+    if(!deleted) throw 'institution not found'
+    res.json(`${req.body._id} deleted`)
+  } catch (e) {
+    res.status(400).json(e)
+  }
+}
+
 module.exports = {
   createInstitution,
   getAll,
   find,
   transport,
   getFilters,
-  confirmInstitution
+  confirmInstitution,
+  getUnconfirmedInstitutions,
+  deleteInstitution
 }
