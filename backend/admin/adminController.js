@@ -5,7 +5,7 @@ logIn = async (req, res) => {
         const token = process.env.TOKEN
 
         if (confirm) res.header('token', token).json('login success')
-        if (!confirm) throw 'wrong email or password'
+        if (!confirm) throw 'wrong password'
     } catch (e) {
         res.status(401).json(e)
     }

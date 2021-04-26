@@ -10,8 +10,7 @@ import Career from './pages/Career';
 import Informal from './pages/Informal';
 import NewPartner from './pages/NewPartner';
 import News from './pages/News';
-import Partners from './pages/Partners';
-import Login from './components/Login';
+import ApiDocs from './pages/ApiDocs';
 
 function App() {
   return (
@@ -36,6 +35,7 @@ function App() {
       <Informal/>
       <Search /> */}
       <Footer />
+      <ApiDocs />
     </div>
   );
 }
