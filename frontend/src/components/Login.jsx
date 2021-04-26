@@ -23,6 +23,9 @@ function Login() {
             sessionStorage.setItem('token', JSON.stringify(response.headers.get('token')))
             passwordInputValue.current.value = ''
             history.push('/admin')
+            document.querySelector('#modalFullscreen').classList.remove('show')
+            document.querySelector('body').classList.remove('modal-open')
+            document.querySelector('.modal-backdrop').remove()
         }
     }
 
