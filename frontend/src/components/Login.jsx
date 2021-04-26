@@ -13,19 +13,10 @@ function Login() {
                     <div className="form-signin">
                         <form>
                             <div className="form-floating">
-                                <input type="email" className="form-control" id="floatingInput" placeholder="vardas@pavyzdys.lt" autoComplete="off" />
-                                <label htmlFor="floatingInput">El.paštas</label>
-                            </div>
-                            <div className="form-floating">
                                 <input type="password" className="form-control" id="floatingPassword" placeholder="Slaptažodis" autoComplete="off" />
                                 <label htmlFor="floatingPassword">Slaptažodis</label>
                             </div>
 
-                            <div className="checkbox mb-3">
-                                <label className="text-muted">
-                                    <input type="checkbox"  value="remember-me" /> Prisiminti mane
-                                </label>
-                            </div>
                             <button className="w-100 button btn-lg button--primary" type="submit">Prisijungti</button>
                         </form>
                     </div>     

@@ -8,10 +8,7 @@ export default function Header() {
 			<header className='p-3 bg-blue text-white'>
 				<nav className='navbar navbar-expand-lg navbar-light'>
 					<div className='container'>
-						<a
-							href='/'
-							className='d-flex main-logo align-items-center mb-2 mb-lg-0 text-white text-decoration-none'
-						>
+          <Link className='d-flex main-logo align-items-center mb-2 mb-lg-0 text-white text-decoration-none' to='/'>
 							<svg
 								viewBox='65 124.6 768 202.3'
 								width='250'
@@ -22,7 +19,7 @@ export default function Header() {
 									fill='#fff'
 								/>
 							</svg>
-						</a>
+						</Link>
 						<button
 							className='navbar-toggler'
 							type='button'
@@ -40,12 +37,6 @@ export default function Header() {
 						>
 							<ul className='navbar-nav me-auto mb-2 mb-lg-0 text-white'>
 								<Fragment>
-									<li className='nav-item'>
-										<Link className='nav-link text-white' to='/'>
-											Pagrindinis
-										</Link>
-									</li>
-
 									<li className='nav-item'>
 										<Link className='nav-link text-white' to='/about'>
 											Apie
@@ -87,12 +78,18 @@ export default function Header() {
 											Karjera
 										</Link>
 									</li>
+
+									<li className='nav-item '>
+										<Link className='nav-link text-white' to='/apidocs'>
+											API docs
+										</Link>
+									</li>
 								</Fragment>
 							</ul>
 							<div className='text-end'>
-								<button type='button' className='btn btn-outline-light me-2'>
-									Login
-								</button>
+              <button type="button" class="button button--primary" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
+                Prisijungti
+              </button>
 							</div>
 						</div>
 					</div>
