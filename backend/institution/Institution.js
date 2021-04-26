@@ -3,7 +3,7 @@ const validator = require('validator')
 
 const InstitutionSchema = mongoose.Schema({
     ins_code: {
-        type: Number,
+        type: String,
         unique: true,
         required: true
     },
