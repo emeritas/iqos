@@ -87,6 +87,12 @@ export default function Header() {
 											Karjera
 										</Link>
 									</li>
+
+									<li className='nav-item '>
+										<Link className='nav-link text-white' to='/apidocs'>
+											API docs
+										</Link>
+									</li>
 								</Fragment>
 							</ul>
 							<div className='text-end'>
