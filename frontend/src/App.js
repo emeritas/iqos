@@ -10,8 +10,9 @@ import Career from './pages/Career';
 import Informal from './pages/Informal';
 import NewPartner from './pages/NewPartner';
 import News from './pages/News';
-import Partners from './pages/Partners';
 import ApiDocs from './pages/ApiDocs';
+import Partners from './pages/Partners';
+import Admin from './pages/Admin';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
             <Route exact path='/apidocs' component={ApiDocs} />
           </Switch>
         </Fragment>
-         <Footer />
+        <Admin />
+        <Footer />
       </Router>
 
      
