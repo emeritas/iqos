@@ -36,7 +36,9 @@ find = async (req, res) => {
   const county = req.body.county
   const main_type = req.body.main_type
 
-  const find = {}
+  const find = {
+    confirmed: true
+  }
   if (ins_code) find.ins_code = { "$regex": ins_code }
   if (name) find.name = { "$regex": name }
   if (school_type) find.school_type = school_type
