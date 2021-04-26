@@ -11,9 +11,7 @@ import Informal from './pages/Informal';
 import NewPartner from './pages/NewPartner';
 import News from './pages/News';
 import Partners from './pages/Partners';
-import NewPartner from './pages/NewPartner';
 import ApiDocs from './pages/ApiDocs';
-import Partners from './pages/Partners';
 
 
 function App() {

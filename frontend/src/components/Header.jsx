@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../scss/header.scss';
 import Login from './Login';
 import { Link } from 'react-router-dom';
 
@@ -91,9 +90,9 @@ export default function Header() {
 								</Fragment>
 							</ul>
 							<div className='text-end'>
-								<button type='button' className='btn btn-outline-light me-2'>
-									Login
-								</button>
+              <button type="button" class="button button--primary" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
+                Prisijungti
+              </button>
 							</div>
 						</div>
 					</div>
