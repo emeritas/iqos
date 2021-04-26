@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../scss/header.scss';
 import Login from './Login';
 import { Link } from 'react-router-dom';
 
@@ -86,6 +85,12 @@ export default function Header() {
 									<li className='nav-item '>
 										<Link className='nav-link text-white' to='/career'>
 											Karjera
+										</Link>
+									</li>
+
+									<li className='nav-item '>
+										<Link className='nav-link text-white' to='/apidocs'>
+											API docs
 										</Link>
 									</li>
 								</Fragment>
