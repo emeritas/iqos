@@ -32,9 +32,10 @@ function App() {
             <Route exact path='/apidocs' component={ApiDocs} />
           </Switch>
         </Fragment>
+         <Footer />
       </Router>
 
-      <Footer />
+     
     </div>
   );
 }
