@@ -94,21 +94,22 @@ export default function Admin() {
 
   useEffect(() => {
     fetch('http://localhost:5000/getfilters')
-      .then((res) => res.json())
-      .then((data) => {
-        setFilters(data);
-      });
+    .then((res) => res.json())
+    .then((data) => {
+      setFilters(data);
+    });
+
     fetch('http://localhost:5000/unconfirmed', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        token: sessionStorage.getItem('token')
+        token: JSON.parse(sessionStorage.getItem('token'))
       },
     })
-      .then((res) => res.json())
-      .then((data) => {
-        setUnconfirmed(data)
-      });
+    .then((res) => res.json())
+    .then((data) => {
+      setUnconfirmed(data)
+    });
   }, []);
 
   return (
