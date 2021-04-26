@@ -1,3 +1,10 @@
 .hero{
     padding-top:88px;
+    background-image:url('../../assets/images/education.jpg');
+    position: relative;
   }
+
+.hero__content{
+  position: relative;
+  z-index: 9;
+}
