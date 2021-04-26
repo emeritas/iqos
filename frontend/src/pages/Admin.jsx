@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import SelectComp from '../components/SelectComp';
+import Toast from '../components/Toast'
 
 export default function Admin() {
+  // Toast states
+  const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState('')
+  const [toast, setToast] = useState(false)
+
   const [form, setForm] = useState({
     ins_code: '',
     name: '',
@@ -40,10 +46,20 @@ export default function Admin() {
     })
     .then(res => {
       if (res.status === 200) {
-        alert('Įstaiga sekmingai ištrinta.')
+        setMessage('Įstaiga sekmingai ištrinta.')
+        setSuccess(true)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
         target.target.parentElement.parentNode.style.display = 'none'
       } else {
-        alert('Jūs nesate autorizuotas.')
+        setMessage('Jūs nesate autorizuotas.')
+        setSuccess(false)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
       }
     })
   }
@@ -53,17 +69,26 @@ export default function Admin() {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
-        // token: sessionStorage.getItem('token') 
-        token: 'eyJhbGciOiJIUzI1NiJ9.bnRvdm5iajkweWI2NGldLWJ2aTRieTdtNjRpYls3eTlbaV1d.v58XJ_HCtcbQFz2kiXDWinTTljKks3RK1czNpgwBluE'
+        token: sessionStorage.getItem('token')
       },
       body: JSON.stringify({_id: id})
     })
     .then(res => {
       if (res.status === 200) {
-        alert('Įstaiga sekmingai ptvritinta!')
+        setMessage('Įstaiga sekmingai ptvritinta!')
+        setSuccess(true)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
         target.target.parentElement.parentNode.style.display = 'none'
       } else {
-        alert('Jūs nesate autorizuotas.')
+        setMessage('Jūs nesate autorizuotas.')
+        setSuccess(false)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
       }
     })
   }
@@ -78,8 +103,7 @@ export default function Admin() {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        // token: sessionStorage.getItem('token') 
-        token: 'eyJhbGciOiJIUzI1NiJ9.bnRvdm5iajkweWI2NGldLWJ2aTRieTdtNjRpYls3eTlbaV1d.v58XJ_HCtcbQFz2kiXDWinTTljKks3RK1czNpgwBluE'
+        token: sessionStorage.getItem('token')
       },
     })
       .then((res) => res.json())
@@ -97,7 +121,7 @@ export default function Admin() {
           </h1>
         </div>
       </section>
-      <section className="bg-light-blue">
+      <section className="">
         <div className="container">
           <div className="row">
             <div className="col-12 table-responsive">
@@ -206,7 +230,7 @@ export default function Admin() {
           </div>
         </div>
       </section>
-      <section className="bg-light-blue">
+      <section className="">
         <div className="container">
           <div className="row">
             <div className="col-12 table-responsive">
@@ -251,6 +275,7 @@ export default function Admin() {
           </div>
         </div>
       </section>
+      {toast && <Toast message={message} success={success}/>}
     </main>
   );
 }
