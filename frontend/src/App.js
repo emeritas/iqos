@@ -10,10 +10,9 @@ import Career from './pages/Career';
 import Informal from './pages/Informal';
 import NewPartner from './pages/NewPartner';
 import News from './pages/News';
-import Partners from './pages/Partners';
-import NewPartner from './pages/NewPartner';
 import ApiDocs from './pages/ApiDocs';
 import Partners from './pages/Partners';
+import Admin from './pages/Admin';
 
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
           </Switch>
         </Fragment>
       </Router>
-
+      <Admin />
       <Footer />
       <ApiDocs />
     </div>

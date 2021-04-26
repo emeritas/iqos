@@ -39,9 +39,9 @@ export default function NewPartner() {
           address: '',
           legal_status: ''
         })
-        alert('all good')
+        alert('Sekmingai gavome jūsų užklausą!')
       } else {
-        alert('all bad')
+        alert('Prašome patikrinti įvestis!')
       }
     })
   }
