@@ -34,7 +34,6 @@ function App() {
             <Route exact path='/admin' component={Admin} />
           </Switch>
         </Fragment>
-        <Admin />
         <Footer />
       </Router>
 
