@@ -2,6 +2,7 @@ const Institution = require('./Institution')
 const jwt = require('jsonwebtoken')
 
 createInstitution = async (req, res) => {
+  console.log(req.body)
   try {
     const inst = new Institution(req.body)
     const createdInst = await inst.save()
