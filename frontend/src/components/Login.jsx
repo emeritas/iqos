@@ -21,6 +21,7 @@ function Login() {
         const data = await response.json()
         if (data === "login success") {
             sessionStorage.setItem('token', JSON.stringify(response.headers.get('token')))
+            passwordInputValue.current.value = ''
             history.push('/admin')
         }
     }
