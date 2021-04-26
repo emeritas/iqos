@@ -39,8 +39,7 @@ export default function Admin() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        // token: sessionStorage.getItem('token')
-        token: 'eyJhbGciOiJIUzI1NiJ9.bnRvdm5iajkweWI2NGldLWJ2aTRieTdtNjRpYls3eTlbaV1d.v58XJ_HCtcbQFz2kiXDWinTTljKks3RK1czNpgwBluE'
+        token: sessionStorage.getItem('token')
       },
       body: JSON.stringify({_id: id})
     })

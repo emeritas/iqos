@@ -31,6 +31,7 @@ function App() {
             <Route exact path='/search' component={Search} />
             <Route exact path='/career' component={Career} />
             <Route exact path='/apidocs' component={ApiDocs} />
+            <Route exact path='/admin' component={Admin} />
           </Switch>
         </Fragment>
         <Admin />
