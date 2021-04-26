@@ -7,7 +7,7 @@ import partnerVersliLt from '../assets/images/partner-versli-lietuva.jpg';
 
 export default function Partners() {
   return (
-    <main>
+    <main className='fade-animation'>
       <section className="hero">
         <div className="px-4 py-5 my-5 text-center">
           <h1 className="display-5 fw-bold">Mūsų partneriai</h1>
@@ -55,6 +55,7 @@ export default function Partners() {
           </div>
         </div>
       </section>
+      
     </main>
   )
 }

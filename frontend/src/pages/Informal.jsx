@@ -3,12 +3,12 @@ import InformalImage from '../assets/images/AI-learning.jpg';
 
 export default function Informal() {
   return (
-    <main>
+    <main className='fade-animation'>
       <section className='bg-light-grey'>
         <div className='container'>
           <div className='row'>
             <div className='col-sm-12'>
-              <h1 className='main-title text-center'>
+              <h1 className='main-title text-center ml2'>
                 Neformaliojo švietimo ypatumai
               </h1>
               <div className='text-center'>
@@ -17,9 +17,6 @@ export default function Informal() {
                   src={InformalImage}
                   alt='Dirbtinio intelekto pažanga'
                 ></img>
-                <p className='text-muted'>
-                  Nuotrauka: Phonlamai Photo/Shutterstock.com
-                </p>
               </div>
 
               <p className='text-center article-description'>
@@ -43,7 +40,7 @@ export default function Informal() {
 
               <p>Į klausimą atsako Monika Simaškaitė – Švietimo ekspertė.</p>
 
-              <p className='text-muted'>
+              <p className='text-muted justify'>
                 Tikriausiai skiriasi laisvumu, kur dėmesys nukreiptas į procesą,
                 o ne į rezultatus. Formalusis daugiau turi apribojimų, nuostatų
                 ir taisyklių. Neformalusis daug laisvesnis, labiau linkęs į
@@ -60,7 +57,7 @@ export default function Informal() {
                 Kokia yra Europos Sąjungos senbuvių patirtis neformalaus
                 švietimo srityje? Ko Lietuva gali išmokti?
               </h3>
-              <p className='text-muted text-justify'>
+              <p className='text-muted justify'>
                 Vakarų Europa neformalų ugdymą suvokia kaip vertybių, socialinių
                 kompetencijų, gebėjimų išryškinimą ir ugdymą. Lietuvoje
                 istoriškai susiformavusi pozicija, kad neformalus švietimas tėra
@@ -77,7 +74,7 @@ export default function Informal() {
             </div>
             <div className='col'>
               <h3>Kokia yra tiesioginė neformalaus krepšelio nauda?</h3>
-              <p className='text-muted text-justify'>
+              <p className='text-muted justify'>
                 Neformalaus ugdymo krepšelis, visų pirma, – platesnė ir
                 įvairesnė vaikų įtraukties į neformaliąją veiklą galimybė.
                 Valstybės parama minimiems užsiėmimams leis pasiekti kur kas
@@ -97,7 +94,7 @@ export default function Informal() {
             </div>
             <div className='col'>
               <h3>NVŠ krepšelis</h3>
-              <p className='text-muted text-justify'>
+              <p className='text-muted justify'>
                 Neformaliojo vaikų švietimo lėšos iš Europos Sąjungos finansinės
                 paramos, bendrojo finansavimo ir kitų Lietuvos Respublikos
                 valstybės biudžeto yra skiriamos savivaldybėms neformaliojo
