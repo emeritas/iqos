@@ -3,11 +3,13 @@
 @import './utils/variables';
 @import './utils/animations';
 @import './layout/header';
+@import './layout/footer';
 @import './layout/hero';
 @import './pages/about';
 @import './pages/career';
 @import './components/login';
 @import './components/button';
+
 
 section {
 	padding: 40px 0;
@@ -25,6 +27,13 @@ section {
 	font-weight: 600;
 }
 
+.main-title{
+    text-shadow: 0 0 6px rgba(0,0,0, .1);
+    color:#fff;
+}
+.accordion-item{
+    border:1px solid transparent;
+}
 /* Helpers */
 .layout-centered-content {
 	margin: 0 auto;

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
   return (
-    <main className='fade-animation'>
-      <section className='hero'>
+    <main className='fade-animation home'>
+      <section className='hero hero--home'>
         <div className="bg-overlay"></div>
         <div className='px-4 py-5 my-5 text-center hero__content'>
           <h1 className='display-5 fw-bold text-white'>Hello from homepage</h1>
@@ -16,15 +17,7 @@ export default function Home() {
               extensive prebuilt components, and powerful JavaScript plugins.
             </p>
             <div className='d-grid gap-2 d-sm-flex justify-content-sm-center'>
-              <button type='button' className='button  btn-lg px-4 me-sm-3'>
-                Primary button
-              </button>
-              <button
-                type='button'
-                className='button button--primary btn-lg px-4'
-              >
-                Secondary
-              </button>
+              <Link className="button button--primary btn-lg px-4" to='/new-partner'>TAPK PARTNERIU</Link>
             </div>
           </div>
         </div>
@@ -45,9 +38,8 @@ export default function Home() {
           <div className='layout-centered-content text-center'>
             <h2>Using a Shared Computer?</h2>
             <p>
-              {' '}
               We've saved some of your preferences for the next time you log in,
-              but if you'd like you can clear those now.{' '}
+              but if you'd like you can clear those now.
             </p>
           </div>
         </div>

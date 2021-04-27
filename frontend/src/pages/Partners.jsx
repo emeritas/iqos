@@ -8,8 +8,8 @@ import partnerVersliLt from '../assets/images/partner-versli-lietuva.jpg';
 export default function Partners() {
   return (
     <main className='fade-animation'>
-      <section className="hero">
-        <div className="px-4 py-5 my-5 text-center">
+      <section className="hero bg-light-blue">
+        <div className="text-center">
           <h1 className="display-5 fw-bold">Mūsų partneriai</h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">IQOS tinklas atveria unikalias galimybes akademiniai bendruomenei kurti vertę visuomenei bei sudaro galimybes vystyti moksliniais tyrimais grįstus sprendimus, kuriančius pridėtinę vertę verslo įmonėms.</p>

@@ -1,8 +1,11 @@
 .hero{
-    padding-top:88px;
-    background-image:url('../../assets/images/education.jpg');
+    padding-top:70px;
     position: relative;
   }
+
+.hero--home{
+  background-image:url('../../assets/images/education.jpg');
+}
 
 .hero__content{
   position: relative;

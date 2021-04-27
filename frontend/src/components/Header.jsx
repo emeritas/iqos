@@ -3,6 +3,7 @@ import Login from './Login';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+
 	return (
 		<>
 			<header className='p-3 bg-blue text-white'>
@@ -35,11 +36,11 @@ export default function Header() {
 							className='collapse navbar-collapse'
 							id='navbarSupportedContent'
 						>
-							<ul className='navbar-nav me-auto mb-2 mb-lg-0 text-white'>
+							<ul className='navbar-nav mx-auto mb-2 mb-lg-0 text-white'>
 								<Fragment>
 									<li className='nav-item'>
 										<Link className='nav-link text-white' to='/about'>
-											Apie
+											Apie mus
 										</Link>
 									</li>
 
@@ -48,13 +49,6 @@ export default function Header() {
 											Neformalus švietimas
 										</Link>
 									</li>
-
-									<li className='nav-item'>
-										<Link className='nav-link text-white' to='/new-partner'>
-											Naujas partneris
-										</Link>
-									</li>
-
 									<li className='nav-item'>
 										<Link className='nav-link text-white' to='/news'>
 											Naujienos
@@ -69,21 +63,10 @@ export default function Header() {
 
 									<li className='nav-item'>
 										<Link className='nav-link text-white' to='/search'>
-											Paieška
+											Įstaigų paieška
 										</Link>
 									</li>
 
-									<li className='nav-item '>
-										<Link className='nav-link text-white' to='/career'>
-											Karjera
-										</Link>
-									</li>
-
-									<li className='nav-item '>
-										<Link className='nav-link text-white' to='/apidocs'>
-											API docs
-										</Link>
-									</li>
 								</Fragment>
 							</ul>
 							<div className='text-end'>
