@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SelectComp from '../components/SelectComp'
+import Toast from '../components/Toast'
 
 export default function NewPartner() {
 
@@ -17,6 +18,10 @@ export default function NewPartner() {
   
   const [filters, setFilters] = useState('')
 
+  const [message, setMessage] = useState('')
+  const [success, setSuccess] = useState('')
+  const [toast, setToast] = useState(false)
+
   const submitHandle = (e) => {
     e.preventDefault()
     fetch('http://localhost:5000/create', {
@@ -27,7 +32,7 @@ export default function NewPartner() {
       body: JSON.stringify(form)
     })
     .then(res => {
-      if (!res.status >= 400) {
+      if (res.status === 200) {
         setForm({
           ins_code: '',
           name: '',
@@ -39,9 +44,19 @@ export default function NewPartner() {
           address: '',
           legal_status: ''
         })
-        alert('all good')
+        setMessage('Užklausa pateika sėkmingai')
+        setSuccess(true)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
       } else {
-        alert('all bad')
+        setMessage('Kažkas blogai suvesta :)')
+        setSuccess(false)
+        setToast(true)
+        setTimeout(() => {
+          setToast(false)
+        }, 5000)
       }
     })
   }
@@ -66,43 +81,43 @@ export default function NewPartner() {
             <form onSubmit={submitHandle}>
               <div className="row g-4">
                 <div className="col-12 col-sm-6">
-                  <input className='form-control' type="text" placeholder='Įstaigos pavadinimas' onChange={(e) => setForm({...form, name: e.target.value})}/>
+                  <input className='form-control' value={form.name} type="text" placeholder='Įstaigos pavadinimas' onChange={(e) => setForm({...form, name: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
-                  <input className='form-control' type="number" placeholder='Valstybinis kodas' onChange={(e) => setForm({...form, ins_code: e.target.value})}/>
+                  <input className='form-control' value={form.ins_code} type="number" placeholder='Valstybinis kodas' onChange={(e) => setForm({...form, ins_code: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
-                  <input className='form-control' type="text" placeholder='Įmonės adresas' onChange={(e) => setForm({...form, address: e.target.value})}/>
+                  <input className='form-control' value={form.address} type="text" placeholder='Įmonės adresas' onChange={(e) => setForm({...form, address: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
-                  <input className='form-control' type="phone" placeholder='Telefono numeris' onChange={(e) => setForm({...form, phone: e.target.value})}/>
+                  <input className='form-control' value={form.phone} type="phone" placeholder='Telefono numeris' onChange={(e) => setForm({...form, phone: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
-                  <input className='form-control' type="text" placeholder='Elektroninis paštas' onChange={(e) => setForm({...form, email: e.target.value})}/>
+                  <input className='form-control' value={form.email} type="text" placeholder='Elektroninis paštas' onChange={(e) => setForm({...form, email: e.target.value})}/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Savivaldybė',
                   options: filters.county
-                  }} action={setForm} type='county'/>
+                  }} value={form.county} action={setForm} type='county'/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Grupė',
                   options: filters.school_type
-                  }} action={setForm} type='school_type'/>
+                  }} value={form.school_type} action={setForm} type='school_type'/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Pagrindinis tipas',
                   options: filters.main_type
-                  }} action={setForm} type='main_type'/>
+                  }} value={form.main_type} action={setForm} type='main_type'/>
                 </div>
                 <div className="col-12 col-sm-6">
                   <SelectComp data={{
                   defaultOption: 'Teisinis statusas',
                   options: filters.legal_status
-                  }} action={setForm} type='legal_status'/>
+                  }} value={form.legal_status} action={setForm} type='legal_status'/>
                 </div>
                 <div className="col-12">
                   <button className='btn btn-primary'>Pateikti užklausą</button>
@@ -112,6 +127,7 @@ export default function NewPartner() {
           </div>
         </div>
       </section>
+      {toast && <Toast message={message} success={success}/>}
     </main>
   )
 }

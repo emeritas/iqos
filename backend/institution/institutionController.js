@@ -2,6 +2,7 @@ const Institution = require('./Institution')
 const jwt = require('jsonwebtoken')
 
 createInstitution = async (req, res) => {
+  console.log(req.body)
   try {
     const inst = new Institution(req.body)
     const createdInst = await inst.save()
@@ -36,7 +37,9 @@ find = async (req, res) => {
   const county = req.body.county
   const main_type = req.body.main_type
 
-  const find = {}
+  const find = {
+    confirmed: true
+  }
   if (ins_code) find.ins_code = { "$regex": ins_code }
   if (name) find.name = { "$regex": name }
   if (school_type) find.school_type = school_type
