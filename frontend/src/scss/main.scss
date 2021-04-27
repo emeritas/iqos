@@ -10,73 +10,75 @@
 @import './components/login';
 @import './components/button';
 
-
 section {
-	padding: 40px 0;
+  padding: 40px 0;
 }
 
 .layout-centered-content {
-	p {
-		font-weight: 300;
-		font-size: 20px;
-	}
+  p {
+    font-weight: 300;
+    font-size: 20px;
+  }
 }
 
 .article-description {
-	font-size: 16px;
-	font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.main-title{
-    text-shadow: 0 0 6px rgba(0,0,0, .1);
-    color:#fff;
+.main-title {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
-.accordion-item{
-    border:1px solid transparent;
+.accordion-item {
+  border: 1px solid transparent;
 }
 /* Helpers */
 .layout-centered-content {
-	margin: 0 auto;
-	max-width: 650px;
+  margin: 0 auto;
+  max-width: 650px;
 }
 .bg-light-grey {
-	background-color: $light-grey;
+  background-color: $light-grey;
 }
 
 .bg-blue {
-	background-color: $background-blue;
+  background-color: $background-blue;
 }
 
 .bg-yellow {
-	background-color: $background-yellow;
+  background-color: $background-yellow;
 }
 
 .light-bg {
-	background-color: $modal-bg;
+  background-color: $modal-bg;
 }
 
 .bg-light-blue {
-	background-color: $background-light-blue;
+  background-color: $background-light-blue;
 }
 .iqos-name {
-	font-size: 24px;
+  font-size: 24px;
 }
 .centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .justify {
-    text-align: justify;
+  text-align: justify;
 }
 
-.bg-overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, .4);
-    z-index: 9;
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+}
+.i-tag {
+  color: #5aac44;
 }

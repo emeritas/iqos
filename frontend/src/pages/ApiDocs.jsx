@@ -1,62 +1,87 @@
 const ApiDocs = () => {
+  const mainStyle = {
+    padding: '24px',
+    maxWidth: '1200px',
+    margin: '0 auto',
+  };
 
-    const mainStyle = {
-        padding: '24px',
-        maxWidth: '1200px',
-        margin: '0 auto'
-    }
+  const preStyle = {
+    padding: '24px',
+    backgroundColor: 'rgb(236, 236, 236)',
+  };
 
-    const preStyle = {
-        padding: '24px',
-        backgroundColor: 'rgb(236, 236, 236)'
-    }
+  const h2Style = {
+    paddingTop: '24px',
+  };
 
-    const h2Style = {
-        paddingTop: '24px'
-    }
+  const spanStyle = {
+    color: 'green',
+    fontWeight: '700',
+  };
 
-    const spanStyle = {
-        color: 'green',
-        fontWeight: '700'
-    }
-    
-    return (
-        <main style={mainStyle}>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Admin login
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <h2>Admin login</h2>
-                            <pre style={preStyle}>
-                                <h3>POST</h3>
-                                {`"http://localhost:5000/login"
+  return (
+    <main style={mainStyle}>
+      <div className='accordion accordion-flush' id='accordionFlushExample'>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingOne'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseOne'
+              aria-expanded='false'
+              aria-controls='flush-collapseOne'
+            >
+              Administratoriaus prisijungimas
+            </button>
+          </h2>
+          <div
+            id='flush-collapseOne'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingOne'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <h2>Administratoriaus prisijungimas</h2>
+              <pre style={preStyle}>
+                <h3>POST</h3>
+                {`"http://localhost:5000/login"
                                 json: 
                                     {
                                         "password": "admin123"
                                     }
                                 response: 
-                                    on success: "login success", and `}<span style={spanStyle}>"token"</span>{` in headers,
+                                    on success: "login success", and `}
+                <span style={spanStyle}>"token"</span>
+                {` in headers,
                                     on failure: "wrong password"`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Confirm new institution
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>PATCH</h3>
-                                {`"http://localhost:5000/confirm"
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingTwo'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseTwo'
+              aria-expanded='false'
+              aria-controls='flush-collapseTwo'
+            >
+              Patvirtinti naują instituciją
+            </button>
+          </h2>
+          <div
+            id='flush-collapseTwo'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingTwo'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>PATCH</h3>
+                {`"http://localhost:5000/confirm"
                                 json: 
                                     {
                                         "_id": "60805a39ae95300e0fcef2ab" // id of institution entry
@@ -78,24 +103,36 @@ const ApiDocs = () => {
                                         "school_type": "Progimnazija",
                                         "email": "urbsiovm@urbsys.kaunas.lm.lt",
                                         "legal_status": "Viešoji įstaiga",\n\t\t\t\t\t`}
-                                        <span style={spanStyle}>"confirmed": true,</span>
-                                        {`\n\t\t\t\t\t"__v": 0
+                <span style={spanStyle}>"confirmed": true,</span>
+                {`\n\t\t\t\t\t"__v": 0
                                     }`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Get filters for search
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>GET</h3>
-                                {`"http://localhost:5000/getfilters"
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingThree'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseThree'
+              aria-expanded='false'
+              aria-controls='flush-collapseThree'
+            >
+              Gauti paieškos filtrus
+            </button>
+          </h2>
+          <div
+            id='flush-collapseThree'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingThree'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>GET</h3>
+                {`"http://localhost:5000/getfilters"
                                 response: 
                                     {
                                         "school_type": [
@@ -119,21 +156,33 @@ const ApiDocs = () => {
                                             "Uždaroji akcinė bendrovė",
                                             ...]
                                     }`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        Create new institution
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>POST</h3>
-                                {`"http://localhost:5000/create"
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingFour'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseFour'
+              aria-expanded='false'
+              aria-controls='flush-collapseFour'
+            >
+              Kurti naują instituciją
+            </button>
+          </h2>
+          <div
+            id='flush-collapseFour'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingFour'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>POST</h3>
+                {`"http://localhost:5000/create"
                                 json: 
                                     {
                                         "ins_code": "2",
@@ -161,22 +210,36 @@ const ApiDocs = () => {
                                         "legal_status": "Viešoji įstaiga",
                                         "__v": 0
                                     }`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        Find institution
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>POST</h3>
-                                {`"http://localhost:5000/find"
-                                json (`}<span style={spanStyle}>all properties are optional</span>{`):
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingFive'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseFive'
+              aria-expanded='false'
+              aria-controls='flush-collapseFive'
+            >
+              Rasti naują instituciją
+            </button>
+          </h2>
+          <div
+            id='flush-collapseFive'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingFive'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>POST</h3>
+                {`"http://localhost:5000/find"
+                                json (`}
+                <span style={spanStyle}>all properties are optional</span>
+                {`):
                                     {
                                         "ins_code": 190193030,
                                         "name": "Veiverių",
@@ -185,7 +248,9 @@ const ApiDocs = () => {
                                         "main_type": "Gimnazija",
                                         "legal_status": "Biudžetinė įstaiga"
                                     }
-                                response (`}<span style={spanStyle}>array of objects</span>{`):
+                                response (`}
+                <span style={spanStyle}>array of objects</span>
+                {`):
                                     [
                                         {
                                             "confirmed": true,
@@ -202,27 +267,41 @@ const ApiDocs = () => {
                                             "__v": 0
                                         }
                                     ]`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        Get unconfirmed institutions
-                    </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>GET</h3>
-                                {`"http://localhost:5000/unconfirmed"
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingSix'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseSix'
+              aria-expanded='false'
+              aria-controls='flush-collapseSix'
+            >
+              Gauti nepatvirtintas institucijas
+            </button>
+          </h2>
+          <div
+            id='flush-collapseSix'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingSix'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>GET</h3>
+                {`"http://localhost:5000/unconfirmed"
                                 headers: 
                                 {
                                     "Content-Type": "application/json",
                                     "token": <token which you received on log in>
                                 }
-                                response (`}<span style={spanStyle}>array of objects</span>{`):
+                                response (`}
+                <span style={spanStyle}>array of objects</span>
+                {`):
                                 [
                                     {
                                       "confirmed": false,
@@ -239,21 +318,33 @@ const ApiDocs = () => {
                                       "__v": 0
                                     }, 
                                 ...]`}
-                            </pre>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        Delete institution
-                    </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <pre style={preStyle}>
-                                <h3>POST</h3>
-                                {`"http://localhost:5000/delete"
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div className='accordion-item'>
+          <h2 className='accordion-header' id='flush-headingSeven'>
+            <button
+              className='accordion-button collapsed'
+              type='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#flush-collapseSeven'
+              aria-expanded='false'
+              aria-controls='flush-collapseSeven'
+            >
+              Naikinti instituciją
+            </button>
+          </h2>
+          <div
+            id='flush-collapseSeven'
+            className='accordion-collapse collapse'
+            aria-labelledby='flush-headingSeven'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div className='accordion-body'>
+              <pre style={preStyle}>
+                <h3>POST</h3>
+                {`"http://localhost:5000/delete"
                                 json: 
                                 {
                                     "_id": "6081ad75a9f1855bb597ef41"
@@ -263,14 +354,17 @@ const ApiDocs = () => {
                                     "Content-Type": "application/json",
                                     "token": <token which you received on log in>
                                 }
-                                response: `}<span style={spanStyle}>"6081ad75a9f1855bb597ef41 deleted"</span>
-                            </pre>
-                        </div>
-                    </div>
-                </div>
+                                response: `}
+                <span style={spanStyle}>
+                  "6081ad75a9f1855bb597ef41 deleted"
+                </span>
+              </pre>
             </div>
-        </main>
-    )
-}
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
 
-export default ApiDocs
+export default ApiDocs;

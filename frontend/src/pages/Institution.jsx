@@ -11,7 +11,7 @@ function Institution() {
 
 			<section>
 				<div className='container'>
-					<table class='table table-striped'>
+					<table className='table table-striped'>
 						<tbody>
 							<tr>
 								<td>Otto</td>
