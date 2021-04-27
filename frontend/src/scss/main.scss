@@ -31,7 +31,9 @@ section {
     text-shadow: 0 0 6px rgba(0,0,0, .1);
     color:#fff;
 }
-
+.accordion-item{
+    border:1px solid transparent;
+}
 /* Helpers */
 .layout-centered-content {
 	margin: 0 auto;

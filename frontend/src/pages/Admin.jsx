@@ -116,12 +116,12 @@ export default function Admin() {
     <main className='fade-animation'>
       <section className='hero'>
         <div className='px-4 text-center'>
-          <h1 className='display-5 fw-bold mb-5'>
+          <h1 className='display-5 fw-bold mb-3'>
             Nauju partnerių užklausos
           </h1>
         </div>
       </section>
-      <section className="">
+      <section className="pt-0">
         <div className="container">
           <div className="row">
             <div className="col-12 table-responsive">
@@ -137,6 +137,7 @@ export default function Admin() {
                     <th scope='col'>Pagrindinis tipas</th>
                     <th scope='col'>El. paštas</th>
                     <th scope='col'>Teisinė forma</th>
+                    <th scope='col'></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -153,7 +154,7 @@ export default function Admin() {
                           <td>{e.email}</td>
                           <td>{e.legal_status}</td>
                           <td>
-                            <button onClick={(ev) => {
+                            <button className="button" onClick={(ev) => {
                               handleConfirm(e._id, ev)
                             }}>Patvirtinti</button>
                           </td>
@@ -166,11 +167,11 @@ export default function Admin() {
           </div>
         </div>
       </section>
-      <section className='hero'>
+      <section className='hero pb-0 bg-light-blue'>
         <div className='px-4 text-center'>
-          <h1 className='display-5 fw-bold mb-5'>
+          <h2 className='display-5 fw-bold mb-5 mt-0'>
             Ieškokite įstaigų
-          </h1>
+          </h2>
           <div className='col-lg-6 mx-auto'>
             <form onSubmit={submitHandle}>
               <div className='row g-4'>
@@ -223,14 +224,14 @@ export default function Admin() {
                   />
                 </div>
                 <div className='col-12'>
-                  <button className='btn btn-primary'>Ieškoti</button>
+                  <button className='button button--primary'>Ieškoti</button>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="bg-yellow">
         <div className="container">
           <div className="row">
             <div className="col-12 table-responsive">
@@ -244,8 +245,9 @@ export default function Admin() {
                     <th scope='col'>Savivaldybė</th>
                     <th scope='col'>Grupė</th>
                     <th scope='col'>Pagrindinis tipas</th>
-                    <th scope='col'>El. paštas</th>
+                    <th  scope='col'>El. paštas</th>
                     <th scope='col'>Teisinė forma</th>
+                    <th scope='col'></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -262,7 +264,7 @@ export default function Admin() {
                           <td>{e.email}</td>
                           <td>{e.legal_status}</td>
                           <td>
-                            <button onClick={(ev) => {
+                            <button className="button" onClick={(ev) => {
                               handleDelete(e._id, ev)
                             }}>Ištrinti</button>
                           </td>

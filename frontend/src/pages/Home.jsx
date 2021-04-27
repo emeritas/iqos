@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <main className='fade-animation home'>
-      <section className='hero'>
+      <section className='hero hero--home'>
         <div className="bg-overlay"></div>
         <div className='px-4 py-5 my-5 text-center hero__content'>
           <h1 className='display-5 fw-bold text-white'>Hello from homepage</h1>
