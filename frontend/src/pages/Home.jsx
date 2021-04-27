@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
+<<<<<<< Updated upstream
     <main className='fade-animation home'>
       <section className='hero hero--home'>
         <div className='bg-overlay'></div>
@@ -98,6 +99,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+=======
+    <main className='fade-animation'>
+      <section className='hero'></section>
+>>>>>>> Stashed changes
     </main>
   );
 }

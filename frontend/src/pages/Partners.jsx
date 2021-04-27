@@ -7,12 +7,21 @@ import partnerVersliLt from '../assets/images/partner-versli-lietuva.jpg';
 export default function Partners() {
   return (
     <main className='fade-animation'>
+<<<<<<< Updated upstream
       <section className='hero bg-light-blue'>
         <div className='text-center'>
           <h1 className='display-5 fw-bold'>Mūsų partneriai</h1>
           <div className='col-lg-6 mx-auto'>
             <p className='lead mb-4'>
               IQOS tinklas atveria unikalias galimybes akademinei bendruomenei
+=======
+      <section className='hero'>
+        <div className='px-4 py-5 my-5 text-center'>
+          <h1 className='display-5 fw-bold'>Mūsų partneriai</h1>
+          <div className='col-lg-6 mx-auto'>
+            <p className='lead mb-4'>
+              IQOS tinklas atveria unikalias galimybes akademiniai bendruomenei
+>>>>>>> Stashed changes
               kurti vertę visuomenei bei sudaro galimybes vystyti moksliniais
               tyrimais grįstus sprendimus, kuriančius pridėtinę vertę verslo
               įmonėms.
@@ -32,7 +41,11 @@ export default function Partners() {
                   className='mb-3'
                   alt=''
                 />
+<<<<<<< Updated upstream
                 <h2>Europos sąjungos fondas</h2>
+=======
+                <h2>Europos sajungos fondas</h2>
+>>>>>>> Stashed changes
                 <p>
                   Europos Sąjungos struktūrinė parama nuosekliai mažina
                   socialinius ir ekonominius skirtumus tarp ES šalių narių ar

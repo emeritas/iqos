@@ -21,11 +21,19 @@ const ApiDocs = () => {
 
   return (
     <main style={mainStyle}>
+<<<<<<< Updated upstream
       <div className='accordion accordion-flush' id='accordionFlushExample'>
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingOne'>
             <button
               className='accordion-button collapsed'
+=======
+      <div class='accordion accordion-flush' id='accordionFlushExample'>
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingOne'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseOne'
@@ -37,11 +45,19 @@ const ApiDocs = () => {
           </h2>
           <div
             id='flush-collapseOne'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingOne'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingOne'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <h2>Administratoriaus prisijungimas</h2>
               <pre style={preStyle}>
                 <h3>POST</h3>
@@ -59,10 +75,17 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingTwo'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingTwo'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseTwo'
@@ -74,11 +97,19 @@ const ApiDocs = () => {
           </h2>
           <div
             id='flush-collapseTwo'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingTwo'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingTwo'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>PATCH</h3>
                 {`"http://localhost:5000/confirm"
@@ -110,10 +141,17 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingThree'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingThree'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseThree'
@@ -125,11 +163,19 @@ const ApiDocs = () => {
           </h2>
           <div
             id='flush-collapseThree'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingThree'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingThree'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>GET</h3>
                 {`"http://localhost:5000/getfilters"
@@ -160,26 +206,45 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingFour'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingFour'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseFour'
               aria-expanded='false'
               aria-controls='flush-collapseFour'
             >
+<<<<<<< Updated upstream
               Kurti naują instituciją
+=======
+              Sukurti naują instituciją
+>>>>>>> Stashed changes
             </button>
           </h2>
           <div
             id='flush-collapseFour'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingFour'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingFour'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>POST</h3>
                 {`"http://localhost:5000/create"
@@ -214,26 +279,45 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingFive'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingFive'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseFive'
               aria-expanded='false'
               aria-controls='flush-collapseFive'
             >
+<<<<<<< Updated upstream
               Rasti naują instituciją
+=======
+              Rasti instituciją
+>>>>>>> Stashed changes
             </button>
           </h2>
           <div
             id='flush-collapseFive'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingFive'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingFive'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>POST</h3>
                 {`"http://localhost:5000/find"
@@ -271,10 +355,17 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingSix'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingSix'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseSix'
@@ -286,11 +377,19 @@ const ApiDocs = () => {
           </h2>
           <div
             id='flush-collapseSix'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingSix'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingSix'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>GET</h3>
                 {`"http://localhost:5000/unconfirmed"
@@ -322,26 +421,45 @@ const ApiDocs = () => {
             </div>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div className='accordion-item'>
           <h2 className='accordion-header' id='flush-headingSeven'>
             <button
               className='accordion-button collapsed'
+=======
+        <div class='accordion-item'>
+          <h2 class='accordion-header' id='flush-headingSeven'>
+            <button
+              class='accordion-button collapsed'
+>>>>>>> Stashed changes
               type='button'
               data-bs-toggle='collapse'
               data-bs-target='#flush-collapseSeven'
               aria-expanded='false'
               aria-controls='flush-collapseSeven'
             >
+<<<<<<< Updated upstream
               Naikinti instituciją
+=======
+              Ištrinti instituciją
+>>>>>>> Stashed changes
             </button>
           </h2>
           <div
             id='flush-collapseSeven'
+<<<<<<< Updated upstream
             className='accordion-collapse collapse'
             aria-labelledby='flush-headingSeven'
             data-bs-parent='#accordionFlushExample'
           >
             <div className='accordion-body'>
+=======
+            class='accordion-collapse collapse'
+            aria-labelledby='flush-headingSeven'
+            data-bs-parent='#accordionFlushExample'
+          >
+            <div class='accordion-body'>
+>>>>>>> Stashed changes
               <pre style={preStyle}>
                 <h3>POST</h3>
                 {`"http://localhost:5000/delete"

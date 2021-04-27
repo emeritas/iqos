@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import SelectComp from '../components/SelectComp';
+<<<<<<< Updated upstream
 import Toast from '../components/Toast';
+=======
+>>>>>>> Stashed changes
 
 export default function NewPartner() {
   const [form, setForm] = useState({
@@ -16,10 +19,13 @@ export default function NewPartner() {
   });
 
   const [filters, setFilters] = useState('');
+<<<<<<< Updated upstream
 
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState('');
   const [toast, setToast] = useState(false);
+=======
+>>>>>>> Stashed changes
 
   const submitHandle = (e) => {
     e.preventDefault();
@@ -30,7 +36,11 @@ export default function NewPartner() {
       },
       body: JSON.stringify(form),
     }).then((res) => {
+<<<<<<< Updated upstream
       if (res.status === 200) {
+=======
+      if (!res.status >= 400) {
+>>>>>>> Stashed changes
         setForm({
           ins_code: '',
           name: '',
@@ -42,6 +52,7 @@ export default function NewPartner() {
           address: '',
           legal_status: '',
         });
+<<<<<<< Updated upstream
         setMessage('Užklausa pateika sėkmingai');
         setSuccess(true);
         setToast(true);
@@ -55,6 +66,11 @@ export default function NewPartner() {
         setTimeout(() => {
           setToast(false);
         }, 5000);
+=======
+        alert('all good');
+      } else {
+        alert('all bad');
+>>>>>>> Stashed changes
       }
     });
   };
@@ -71,11 +87,21 @@ export default function NewPartner() {
     <main className='fade-animation'>
       <section className='hero'>
         <div className='px-4 py-5 my-5 text-center'>
+<<<<<<< Updated upstream
           <h1 className='display-5 fw-bold mb-5'>Registruoti savo įmonę</h1>
           <div className='col-lg-6 mx-auto'>
             <p className='lead mb-4'>
               Užpildykite žemiau pateiktą formą. Jei duomenys atitiks mūsų
               reikalavimus, įtrauksime jūsų įmonę į mūsų duomenų bazę.
+=======
+          <h1 className='display-5 fw-bold mb-5'>
+            Registruoti savo įmonę
+          </h1>
+          <div className='col-lg-6 mx-auto'>
+            <p className='lead mb-4'>
+              Užpildykite žemiau esančia formą. Jei duomenys atitiks mūsų
+              standartus įtrauksime jūsų įmonę į mūsų duomenų bazę.
+>>>>>>> Stashed changes
             </p>
           </div>
           <div className='col-lg-6 mx-auto'>
@@ -84,7 +110,10 @@ export default function NewPartner() {
                 <div className='col-12 col-sm-6'>
                   <input
                     className='form-control'
+<<<<<<< Updated upstream
                     value={form.name}
+=======
+>>>>>>> Stashed changes
                     type='text'
                     placeholder='Įstaigos pavadinimas'
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -93,7 +122,10 @@ export default function NewPartner() {
                 <div className='col-12 col-sm-6'>
                   <input
                     className='form-control'
+<<<<<<< Updated upstream
                     value={form.ins_code}
+=======
+>>>>>>> Stashed changes
                     type='number'
                     placeholder='Valstybinis kodas'
                     onChange={(e) =>
@@ -104,7 +136,10 @@ export default function NewPartner() {
                 <div className='col-12 col-sm-6'>
                   <input
                     className='form-control'
+<<<<<<< Updated upstream
                     value={form.address}
+=======
+>>>>>>> Stashed changes
                     type='text'
                     placeholder='Įmonės adresas'
                     onChange={(e) =>
@@ -115,7 +150,10 @@ export default function NewPartner() {
                 <div className='col-12 col-sm-6'>
                   <input
                     className='form-control'
+<<<<<<< Updated upstream
                     value={form.phone}
+=======
+>>>>>>> Stashed changes
                     type='phone'
                     placeholder='Telefono numeris'
                     onChange={(e) =>
@@ -126,7 +164,10 @@ export default function NewPartner() {
                 <div className='col-12 col-sm-6'>
                   <input
                     className='form-control'
+<<<<<<< Updated upstream
                     value={form.email}
+=======
+>>>>>>> Stashed changes
                     type='text'
                     placeholder='Elektroninis paštas'
                     onChange={(e) =>
@@ -140,7 +181,10 @@ export default function NewPartner() {
                       defaultOption: 'Savivaldybė',
                       options: filters.county,
                     }}
+<<<<<<< Updated upstream
                     value={form.county}
+=======
+>>>>>>> Stashed changes
                     action={setForm}
                     type='county'
                   />
@@ -151,7 +195,10 @@ export default function NewPartner() {
                       defaultOption: 'Grupė',
                       options: filters.school_type,
                     }}
+<<<<<<< Updated upstream
                     value={form.school_type}
+=======
+>>>>>>> Stashed changes
                     action={setForm}
                     type='school_type'
                   />
@@ -162,7 +209,10 @@ export default function NewPartner() {
                       defaultOption: 'Pagrindinis tipas',
                       options: filters.main_type,
                     }}
+<<<<<<< Updated upstream
                     value={form.main_type}
+=======
+>>>>>>> Stashed changes
                     action={setForm}
                     type='main_type'
                   />
@@ -173,7 +223,10 @@ export default function NewPartner() {
                       defaultOption: 'Teisinis statusas',
                       options: filters.legal_status,
                     }}
+<<<<<<< Updated upstream
                     value={form.legal_status}
+=======
+>>>>>>> Stashed changes
                     action={setForm}
                     type='legal_status'
                   />
