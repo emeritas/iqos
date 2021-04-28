@@ -179,7 +179,7 @@ export default function NewPartner() {
                   />
                 </div>
                 <div className='col-12'>
-                  <button className='btn btn-primary'>Pateikti užklausą</button>
+                  <button className='button button--primary'>Pateikti užklausą</button>
                 </div>
               </div>
             </form>
