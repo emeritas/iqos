@@ -1,5 +1,4 @@
 import React from 'react';
-import Education from '../assets/images/education.jpg';
 
 export default function About() {
   return (
@@ -11,9 +10,7 @@ export default function About() {
       </section>
       <section>
         <div className='container about-container'>
-          <img src={Education} className='about-img text-center' />
-
-          <div className='centered'>
+          <div>
             <p className='about-page'>
               IQOS projekto idėja užgimė 2005 m., kai tuometiniams
               abiturientams, besiplaškantiems pasirinkimų sukūryje, ir
