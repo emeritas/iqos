@@ -13,7 +13,7 @@ export default function About() {
           <div>
             <p className='about-page'>
               IQOS projekto idėja užgimė 2005 m., kai tuometiniams
-              abiturientams, besiplaškantiems pasirinkimų sukūryje, ir
+              abiturientams, besiplaškantiems pasirinkimų sūkuryje, ir
               abejojantiems, kur stoti, užgimė idėja sukurti organizuotą duomenų
               bazę, kurioje būtų pateiktos visos Lietuvos švietimo institucijos.
               Tuo metu svetainė startavo su 50 mokymo įstaigų duomenu baze. Šiuo
