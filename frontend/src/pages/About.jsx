@@ -16,7 +16,7 @@ export default function About() {
               abiturientams, besiplaškantiems pasirinkimų sūkuryje, ir
               abejojantiems, kur stoti, užgimė idėja sukurti organizuotą duomenų
               bazę, kurioje būtų pateiktos visos Lietuvos švietimo institucijos.
-              Tuo metu svetainė startavo su 50 mokymo įstaigų duomenu baze. Šiuo
+              Tuo metu svetainė startavo su 50 mokymo įstaigų duomenų baze. Šiuo
               metu joje rasite daugiau nei 4000 mokymo įstaigų!
             </p>
             <p className='about-page'>
