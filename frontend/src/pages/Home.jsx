@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-
   return (
     <main className='fade-animation home'>
       <section className='hero hero--home'>

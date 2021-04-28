@@ -4,8 +4,8 @@ import InformalImage from '../assets/images/AI-learning.jpg';
 export default function Informal() {
   return (
     <main className='fade-animation'>
-      <section class='bg-light-blue pt-3 pb-3'>
-				<div class='container'>
+      <section className='bg-light-blue pt-3 pb-3'>
+				<div className='container'>
 					<h1 className='main-title text-center font-bold'> Neformaliojo švietimo ypatumai</h1>
 				</div>
 			</section>
@@ -26,15 +26,15 @@ export default function Informal() {
 
       <section>
         <div className='container text-center'>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Kuo skiriasi formalusis ir neformalusis švietimai?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
 
                   <p>Į klausimą atsako Monika Simaškaitė – Švietimo ekspertė.</p>
 
@@ -52,14 +52,14 @@ export default function Informal() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Kuo skiriasi formalusis ir neformalusis švietimai?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
 
                   <p>Į klausimą atsako Monika Simaškaitė – Švietimo ekspertė.</p>
                   <p className='text-muted justify'>
@@ -76,15 +76,15 @@ export default function Informal() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Kokia yra Europos Sąjungos senbuvių patirtis neformalaus
                 švietimo srityje? Ko Lietuva gali išmokti?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
                   <p className='text-muted justify'>
                   Vakarų Europa neformalų ugdymą suvokia kaip vertybių, socialinių
                   kompetencijų, gebėjimų išryškinimą ir ugdymą. Lietuvoje
@@ -102,14 +102,14 @@ export default function Informal() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFour">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Kokia yra tiesioginė neformalaus krepšelio nauda?
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
                   <p className='text-muted justify'>
                     Neformalaus ugdymo krepšelis, visų pirma, – platesnė ir
                     įvairesnė vaikų įtraukties į neformaliąją veiklą galimybė.
@@ -130,14 +130,14 @@ export default function Informal() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFour">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Kokia yra tiesioginė neformalaus krepšelio nauda?
                 </button>
               </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div className="accordion-body">
                   <p className='text-muted justify'>
                     Neformalaus ugdymo krepšelis, visų pirma, – platesnė ir
                     įvairesnė vaikų įtraukties į neformaliąją veiklą galimybė.
