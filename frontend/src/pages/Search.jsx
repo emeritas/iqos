@@ -39,7 +39,7 @@ export default function Search() {
   return (
     <main className='fade-animation'>
       <section className='hero'>
-        <div className='px-4 py-5 my-5 text-center'>
+        <div className='text-center'>
           <h1 className='display-5 fw-bold mb-5'>
             Ieškokite jus dominančios įstaigos.
           </h1>
