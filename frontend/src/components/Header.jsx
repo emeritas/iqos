@@ -69,10 +69,10 @@ export default function Header() {
 
 								</Fragment>
 							</ul>
-							<div className='text-end'>
-              <button type="button" class="button button--primary" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
-                Prisijungti
-              </button>
+							<div >
+                <button type="button" class="button button--primary" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
+                  Admin panelė
+                </button>
 							</div>
 						</div>
 					</div>
