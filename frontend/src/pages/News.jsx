@@ -6,8 +6,8 @@ import LithuanianLang from '../assets/images/lithuanian-lang.jpg';
 export default function News() {
 	return (
 		<main className='fade-animation'>
-			<section class='bg-light-blue pt-3 pb-3'>
-				<div class='container'>
+			<section className='bg-light-blue pt-3 pb-3'>
+				<div className='container'>
 					<h1 className='main-title text-center font-bold'>Naujienos</h1>
 				</div>
 			</section>

@@ -13,19 +13,19 @@ export default function Search() {
   const [filters, setFilters] = useState('');
 
   const submitHandle = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     fetch('http://localhost:5000/find', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json' 
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(form)
+      body: JSON.stringify(form),
     })
-    .then(res => res.json())
-    .then(data => {
-      setData(data.slice(0, 20))
-    })
-  }
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data.slice(0, 20));
+      });
+  };
 
   useEffect(() => {
     fetch('http://localhost:5000/getfilters')
@@ -102,11 +102,11 @@ export default function Search() {
           </div>
         </div>
       </section>
-      <section className="bg-light-blue">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 table-responsive">
-              <table className="table table-striped table-hover">
+      <section className='bg-light-blue'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12 table-responsive'>
+              <table className='table table-striped table-hover'>
                 <thead>
                   <tr>
                     <th scope='col'>Juridinio asmens kodas</th>

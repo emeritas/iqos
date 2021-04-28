@@ -4,8 +4,8 @@ import CareerImg from '../assets/images/career.png';
 export default function Career() {
   return (
     <main className='fade-animation'>
-      <section class='bg-light-blue pt-3 pb-3'>
-				<div class='container'>
+      <section className='bg-light-blue pt-3 pb-3'>
+				<div className='container'>
 					<h1 className='main-title text-center font-bold'>Ieškote karjeros galimybių?</h1>
 				</div>
 			</section>
@@ -15,11 +15,11 @@ export default function Career() {
           <div className="row">
             <div className="col-sm-6">
             <h4>Šiuo metu laisvos pareigybės:</h4>
-              <div class='accordion' id='accordionExample'>
-                <div class='accordion-item'>
-                  <h2 class='accordion-header' id='headingOne'>
+              <div className='accordion' id='accordionExample'>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingOne'>
                     <button
-                      class='accordion-button'
+                      className='accordion-button'
                       type='button'
                       data-bs-toggle='collapse'
                       data-bs-target='#collapseOne'
@@ -32,11 +32,11 @@ export default function Career() {
                   </h2>
                   <div
                     id='collapseOne'
-                    class='accordion-collapse collapse show'
+                    className='accordion-collapse collapse show'
                     aria-labelledby='headingOne'
                     data-bs-parent='#accordionExample'
                   >
-                    <div class='accordion-body'>
+                    <div className='accordion-body'>
                       <h6 className='career-title'>Reikalavimai pretendentui:</h6>
                       <ul>
                         <li>turėti aukštąjį universitetinį išsilavinimą;</li>
@@ -104,10 +104,10 @@ export default function Career() {
                     </div>
                   </div>
                 </div>
-                <div class='accordion-item'>
-                  <h2 class='accordion-header' id='headingTwo'>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingTwo'>
                     <button
-                      class='accordion-button collapsed'
+                      className='accordion-button collapsed'
                       type='button'
                       data-bs-toggle='collapse'
                       data-bs-target='#collapseTwo'
@@ -119,11 +119,11 @@ export default function Career() {
                   </h2>
                   <div
                     id='collapseTwo'
-                    class='accordion-collapse collapse'
+                    className='accordion-collapse collapse'
                     aria-labelledby='headingTwo'
                     data-bs-parent='#accordionExample'
                   >
-                    <div class='accordion-body'>
+                    <div className='accordion-body'>
                       <h6 className='career-title'>Reikalavimai pretendentui:</h6>
                       <ul>
                         <li>
@@ -194,10 +194,10 @@ export default function Career() {
                     </div>
                   </div>
                 </div>
-                <div class='accordion-item'>
-                  <h2 class='accordion-header' id='headingThree'>
+                <div className='accordion-item'>
+                  <h2 className='accordion-header' id='headingThree'>
                     <button
-                      class='accordion-button collapsed'
+                      className='accordion-button collapsed'
                       type='button'
                       data-bs-toggle='collapse'
                       data-bs-target='#collapseThree'
@@ -211,11 +211,11 @@ export default function Career() {
                   </h2>
                   <div
                     id='collapseThree'
-                    class='accordion-collapse collapse'
+                    className='accordion-collapse collapse'
                     aria-labelledby='headingThree'
                     data-bs-parent='#accordionExample'
                   >
-                    <div class='accordion-body'>
+                    <div className='accordion-body'>
                       <h6 className='career-title'>Reikalavimai pretendentui:</h6>
                       <ul>
                         <li>

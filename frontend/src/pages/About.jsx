@@ -1,27 +1,31 @@
 import React from 'react';
-import HeadImg from '../assets/images/head.png';
 
 export default function About() {
-	return (
-		<main className='fade-animation'>
-			<section class='bg-light-blue pt-3 pb-3'>
-				<div class='container'>
-					<h1 className="main-title text-center font-bold">Apie IQOS</h1>
-				</div>
-			</section>
-			<section>
-				<div className='container about-container'>
-					<img src={HeadImg} className='about-img text-center' />
-
-					<div className='centered'>
-						<p className='about-page'>
-							Ieškote informacijos apie Lietuvos aukštąsias mokyklas, ieškote
-							karjerso galimybių ar norite sužinoti aktualiausias naujienas?
-							<br /> Visa tai rasite <span className='iqos-name'>IQOS</span>.
-						</p>
-					</div>
-				</div>
-			</section>
-		</main>
-	);
+  return (
+    <main className='fade-animation'>
+      <section class='bg-light-blue pt-3 pb-3'>
+        <div class='container'>
+          <h1 className='main-title text-center font-bold'>Apie IQOS</h1>
+        </div>
+      </section>
+      <section>
+        <div className='container about-container'>
+          <div>
+            <p className='about-page'>
+              IQOS projekto idėja užgimė 2005 m., kai tuometiniams
+              abiturientams, besiplaškantiems pasirinkimų sukūryje, ir
+              abejojantiems, kur stoti, užgimė idėja sukurti organizuotą duomenų
+              bazę, kurioje būtų pateiktos visos Lietuvos švietimo institucijos.
+              Tuo metu svetainė startavo su 50 mokymo įstaigų duomenu baze. Šiuo
+              metu joje rasite daugiau nei 4000 mokymo įstaigų!
+            </p>
+            <p className='about-page'>
+              Ateityje svetainėje atsiras ir užsienio mokymosi įstaigos bei
+              pagrindiniai stojimo reikalavimai.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
